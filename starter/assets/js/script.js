@@ -10,20 +10,22 @@ function displayTime() {
     currentDayEl.text(today);
     updateHour();
   };
+//   hour colour updating
  function updateHour(){
-    console.log(currentHour);
-  hourEl.each (function(){
-var hourTime=hourEl.value;
-console.log(hourTime);
-   if (hourTime<currentHour){
-     $(this).removeClass("present future").addClass("past");
-} else if (hour === currentHour) {
-  $(this).removeClass("past future").addClass("present");
-} else {
-  $(this).removeClass("past present").addClass("future");
-}
-   
-  });
- };
-
+    // for each time block element
+    $(".row").each(function() {
+        // getting how and description elemenets
+        var rowHour = parseInt($(this).find(".hour").text());
+        var description = $(this).find(".description");
+        // comparison
+        if ( rowHour<currentHour) {
+          description.removeClass("present future").addClass("past");}
+          else if (rowHour == currentHour) {
+            description.removeClass("past future").addClass("present");
+        } else {
+            description.removeClass("past present").addClass("future");
+        }
+          ;});};
+  
+// making sure time is regularly updated
   setInterval(displayTime, 1000);
