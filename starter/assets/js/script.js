@@ -1,7 +1,8 @@
 var currentDayEl=$("#currentDay");
 var currentHour="";
 var hourEl= $("#hour");
-var description=("textarea")
+var description=$(".textarea");
+var timeblock=$(".row");
 // handle displaying the day
 function displayTime() {
     var today = dayjs().format("dddd DD/MM/YYYY");
@@ -13,7 +14,7 @@ function displayTime() {
 //   hour colour updating
  function updateHour(){
     // for each time block element
-    $(".row").each(function() {
+    timeblock.each(function() {
         // getting how and description elemenets
         var rowHour = parseInt($(this).find(".hour").text());
         var description = $(this).find(".description");
@@ -24,8 +25,10 @@ function displayTime() {
             description.removeClass("past future").addClass("present");
         } else {
             description.removeClass("past present").addClass("future");
-        }
-          ;});};
-  
+        };
+      });
+    };
+
+
 // making sure time is regularly updated
   setInterval(displayTime, 1000);
