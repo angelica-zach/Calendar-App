@@ -1,13 +1,21 @@
 # Calendar-App
+
 ## Description
+
 In this project, i made a calendar app using jquery and time APIs. The time and date were gotten from the dayjs() API and then formatted. The layout was made using bootstrap. There is also local storage for the save button . For ease of use, the date blocks are colour coded, with gray meaning past events, and therefore unimportant , red meaning now and green meaning future. The calendar has time blocks from 9-17 mimicing a traditional workday
-[calendar app]https://angelica-zach.github.io/Calendar-App/)
+[calendar app]https://angelica-zach.github.io/Calendar-App/
+
 ## Installation
-Press the green  code button in the top right of the screen and copy your desired method (eg. for shh keys copy and use git clone in your terminal)
+
+Press the green code button in the top right of the screen and copy your desired method (eg. for shh keys copy and use git clone in your terminal)
+
 ## Functions
+
 How display appears
-![calendar](images/image.png) 
+![calendar](starter/images/image.jpg)
+
 ## License
+
 MIT License
 
 Copyright (c) [2023] [angelica zachowski]
@@ -29,4 +37,3 @@ AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
 LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
 OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
 SOFTWARE.
-
